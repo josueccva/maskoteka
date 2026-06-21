@@ -1,10 +1,9 @@
 <div id="responsive-menu">
     <ul class="menu-holder">
-        <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#services"><i class="fa fa-cogs"></i>Services</a></li>
-        <li><a href="#products"><i class="fa fa-list"></i>Products</a></li>
-        <li><a href="#video"><i class="fa fa-list"></i>Video</a></li>
-        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
+        <li><a routerLink="/" fragment="home"><i class="fa fa-home"></i>Inicio</a></li>
+        <li><a routerLink="/" fragment="servicesus"><i class="fa fa-cogs"></i>Servicios</a></li>
+        <li><a routerLink="/" fragment="aboutus"><i class="fa fa-list"></i>Nosotros</a></li>
+        <li><a routerLink="/" fragment="contactus"><i class="fa fa-envelope"></i>Contacto</a></li>
     </ul>
 </div>
 
@@ -26,16 +25,16 @@
                 <div class="col-md-5 col-sm-5">
                     <nav class="main-menu hidden-xs">
                         <ul>
-                            <li><a routerLink="/">Inicio</a></li>
-                            <li><a href="#services">Servicios</a></li>
-                            <li><a href="#about">Nosotros</a></li>
-                            <li><a href="#contact">Contacto</a></li>
+                            <li><a routerLink="/" fragment="home">Inicio</a></li>
+                            <li><a routerLink="/" fragment="servicesus">Servicios</a></li>
+                            <li><a routerLink="/" fragment="aboutus">Nosotros</a></li>
+                            <li><a routerLink="/" fragment="contactus">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="col-md-2 col-sm-2 auth-buttons">
-                    <a href="/login" class="btn btn-login">Iniciar sesión</a>
+                    <a routerLink="login" class="btn btn-login">Iniciar sesión</a>
                     <!-- <a href="/register" class="btn-register">Registro</a> -->
                 </div>
                 <div class="col-md-2 col-sm-2">
