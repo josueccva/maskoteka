@@ -1,0 +1,79 @@
+<div class="dashboard-wrapper">
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <img src="assets/landing/images/logo-1.jpg" alt="Maskoteka">
+            <div>
+                <h4>Maskoteka</h4>
+                <span>Panel Cliente</span>
+            </div>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li>
+                <a routerLink="/dashboard/home" routerLinkActive="active">
+                    <i class="fa fa-home"></i> Inicio
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/pets" routerLinkActive="active">
+                    <i class="fa fa-paw"></i> Mis Mascotas
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/pet-form" routerLinkActive="active">
+                    <i class="fa fa-plus-circle"></i> Registrar Mascota
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/service" routerLinkActive="active">
+                    <i class="fa fa-medkit"></i> Servicios
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/booking" routerLinkActive="active">
+                    <i class="fa fa-calendar"></i> Reservar Cita
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/history" routerLinkActive="active">
+                    <i class="fa fa-clock-o"></i> Historial
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/profile" routerLinkActive="active">
+                    <i class="fa fa-user"></i> Perfil
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/admin" routerLinkActive="active">
+                    <i class="fa fa-briefcase"></i> Panel Administrativo
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <a routerLink="/" class="logout-link">
+                <i class="fa fa-sign-out"></i> Cerrar sesión
+            </a>
+        </div>
+    </aside>
+
+    <main class="dashboard-main">
+        <header class="topbar">
+            <div>
+                <h3>Dashboard</h3>
+                <p>Gestiona tus mascotas y citas veterinarias</p>
+            </div>
+
+            <div class="topbar-user">
+                <i class="fa fa-bell"></i>
+                <img src="assets/landing/images/logo-1.jpg" alt="Usuario">
+                <span>Cliente</span>
+            </div>
+        </header>
+
+        <section class="dashboard-content">
+            <router-outlet></router-outlet>
+        </section>
+    </main>
+</div>

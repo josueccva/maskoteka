@@ -1,0 +1,168 @@
+.dashboard-wrapper {
+  min-height: 100vh;
+  background: #f5f9ff;
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  box-shadow: 4px 0 20px rgba(0,0,0,.06);
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.sidebar-brand img {
+  /* width: 52px; */
+  height: 52px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.sidebar-brand h4 {
+  margin: 0;
+  color: #6fa8dc;
+  font-weight: 800;
+}
+
+.sidebar-brand span {
+  font-size: 12px;
+  color: #777;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar-menu li {
+  margin-bottom: 8px;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #555;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sidebar-menu a i {
+  width: 22px;
+  margin-right: 8px;
+  color: #6fa8dc;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background: #b3d4fc;
+  color: #1f2933;
+  text-decoration: none;
+}
+
+.sidebar-footer {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 18px;
+}
+
+.logout-link {
+  color: #777;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logout-link:hover {
+  color: #6fa8dc;
+  text-decoration: none;
+}
+
+.dashboard-main {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #ffffff;
+  padding: 22px 35px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar h3 {
+  margin: 0;
+  color: #1f2933;
+  font-weight: 800;
+}
+
+.topbar p {
+  margin: 4px 0 0;
+  color: #777;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+.topbar-user i {
+  font-size: 20px;
+  color: #6fa8dc;
+}
+
+.topbar-user img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard-content {
+  padding: 30px 35px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .topbar {
+    display: block;
+  }
+
+  .topbar-user {
+    margin-top: 15px;
+  }
+}
